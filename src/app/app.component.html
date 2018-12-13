@@ -8,7 +8,11 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" routerLink="/albums">Home
+                    <a class="nav-link" routerLink="/albums" routerLinkActive="active">Home
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="/playlist" routerLinkActive="active">playlist
                     </a>
                 </li>
                 <li *ngIf="auth.authenticated()==false; else elseAuth" class="nav-item active">

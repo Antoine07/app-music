@@ -26,6 +26,10 @@ const routes: Routes = [
     component: AlbumDescriptionComponent
   },
   {
+    path: 'playlist',
+    loadChildren: './playlist/playlist.module#PlaylistModule'
+  },
+  {
     path: 'admin', canActivate: [GuardService],
     component: AlbumComponent
   },

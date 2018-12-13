@@ -1,0 +1,23 @@
+<p>
+  <button class="btn btn-dark">Nombre(s) piste(s) : {{ count }}</button>
+</p>
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">name</th>
+      <th scope="col">title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- une autre manière de récupérer les albums est le pipe async -->
+    <tr [appMusicTag]="music.color" defaultColor="violet" *ngFor="let music of musics | async">
+      <th scope="row">{{ music.id }}</th>
+      <td> {{ music.name }}</td>
+      <td>{{ music.title }}</td>
+      <td>
+        <button (click)="tag(music)" class="btn btn-secondary">tag</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

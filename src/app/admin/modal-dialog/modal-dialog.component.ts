@@ -23,8 +23,7 @@ export class ModalDialogComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   close(){
     this.choice.emit(false);

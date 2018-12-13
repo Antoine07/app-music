@@ -15,6 +15,7 @@ import {
 
 import { merge} from 'rxjs';
 import { map } from 'rxjs/operators';
+import { MusicService } from '../playlist/music.service';
 
 @Component({
   selector: 'app-albums',

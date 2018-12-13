@@ -34,7 +34,7 @@ export class UpdateAlbumComponent implements OnInit {
       // avec la méthode patchValue du formGroup
       this.updateFormAlbum.patchValue(album);
     }
-    );
+  );
   }
 
   initUpdateForm() {
@@ -61,7 +61,7 @@ export class UpdateAlbumComponent implements OnInit {
           Validators.required
         ]),
         status: 'off',
-        id: 0,
+        id: '0',
       }
     );
 
